@@ -1,0 +1,26 @@
+<div class="container aboutMe" >
+    <a name="aboutMe"></a>
+    <div>
+        <p class="h2">Acerca de</p> 
+    </div>
+    <div class="justify-content-center">
+        <p>Mi nombre es Raymudo J. Mayen Ortiz pero todo mundo me dice Ray, Soy desarrollador en Arttech Mexico desde hace ya 4 años.
+            Me gusta cocinar y de vez en cuando me divierto sembrando algunas plantas.
+            Mi pasatiempo favorito es el modelismo de autos y figuras a escala, las escalas mas grandes que tengo son 1:8 y 1:64 en su mayoria Hotwheels.
+            Junto con mi hermano convertimos un Lancer X de automatico a estandar que es mi actual coche, por lo tanto tambien me gusta modificar autos escala 1:1
+        </p> 
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 my-4" *ngFor="let bio of bioList">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" style="height: 150px; width: 100%" src="{{bio.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{bio.socialNetwork}}</h5>
+                        <a href="{{bio.urlSocialNetwork}}" class="btn btn-primary">ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
